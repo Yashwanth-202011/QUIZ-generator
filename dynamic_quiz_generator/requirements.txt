@@ -8,3 +8,5 @@ keybert
 nltk
 python-dotenv
 groq
+gunicorn
+whitenoise
