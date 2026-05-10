@@ -1,0 +1,59 @@
+{
+  "quiz": [
+    {
+      "question": "According to the video, what advanced English verb should be used instead of 'burn my finger' when a monk is hot?",
+      "options": [
+        "Sealed",
+        "Singed",
+        "Chapped",
+        "Scorched"
+      ],
+      "correct_answer": "Sealed",
+      "explanation": "The transcript states, 'When the monk's hot and you burn your finger, you don't actually say burn. You say, I sealed my finger.'"
+    },
+    {
+      "question": "What is the recommended advanced English verb to use instead of 'burned my tongue' or 'burnt'?",
+      "options": [
+        "Sealed",
+        "Singed",
+        "Chapped",
+        "Scolded"
+      ],
+      "correct_answer": "Singed",
+      "explanation": "The transcript advises, 'I burned my tongue. I singed my tongue. You don't actually say burnt. You say, singed.'"
+    },
+    {
+      "question": "When your shoes are too tight and your feet 'hurt', what advanced English word is suggested to use?",
+      "options": [
+        "Sealed",
+        "Singed",
+        "Chapped",
+        "Ached"
+      ],
+      "correct_answer": "Chapped",
+      "explanation": "The transcript mentions, 'When your shoes are too tight and your feet hurt, you say my feet are chapped.'"
+    },
+    {
+      "question": "The video suggests using 'I sealed my finger' in which specific scenario?",
+      "options": [
+        "When you cut your finger",
+        "When a monk is hot and you burn your finger",
+        "When your finger is cold",
+        "When you glue your fingers together"
+      ],
+      "correct_answer": "When a monk is hot and you burn your finger",
+      "explanation": "The transcript specifies, 'When the monk's hot and you burn your finger, you don't actually say burn. You say, I sealed my finger.'"
+    },
+    {
+      "question": "Which of the following phrases is NOT an advanced English replacement taught in the provided content?",
+      "options": [
+        "Singed my tongue (instead of burned tongue)",
+        "Sealed my finger (instead of burned finger)",
+        "Chapped feet (instead of hurt feet)",
+        "Parched throat (instead of dry throat)"
+      ],
+      "correct_answer": "Parched throat (instead of dry throat)",
+      "explanation": "The content covers 'singed my tongue', 'sealed my finger', and 'chapped feet'. 'Parched throat' is not mentioned in the transcript."
+    }
+  ]
+}

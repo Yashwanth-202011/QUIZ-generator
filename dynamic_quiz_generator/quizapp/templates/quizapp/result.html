@@ -1,0 +1,38 @@
+{% extends 'quizapp/base.html' %}
+
+{% block content %}
+    <div class="glass-card" style="max-width: 600px;">
+        <div class="results-header">
+            <h2>Quiz Results</h2>
+            <p style="color: var(--text-secondary);">Here's how you performed</p>
+        </div>
+        
+        <div class="score-circle">
+            <span id="score-percentage">0%</span>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card correct">
+                <div class="stat-value" id="score-correct">0</div>
+                <div class="stat-label">Correct</div>
+            </div>
+            <div class="stat-card incorrect">
+                <div class="stat-value" id="score-incorrect">0</div>
+                <div class="stat-label">Incorrect</div>
+            </div>
+            <div class="stat-card" style="grid-column: span 2;">
+                <div class="stat-value" id="score-total">0/0</div>
+                <div class="stat-label">Total Score</div>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button class="btn-primary" onclick="retryQuiz()" style="background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border);">
+                Retry Quiz
+            </button>
+            <a href="{% url 'index' %}" class="btn-primary" style="text-decoration: none;">
+                New Video
+            </a>
+        </div>
+    </div>
+{% endblock %}

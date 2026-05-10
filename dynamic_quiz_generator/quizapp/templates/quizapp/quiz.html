@@ -1,0 +1,30 @@
+{% extends 'quizapp/base.html' %}
+
+{% block content %}
+    <div class="quiz-header">
+        <h2 id="quiz-title">Quiz in Progress</h2>
+        <div style="color: var(--text-secondary); font-weight: 500;">
+            Question <span id="current-q-num">1</span> of <span id="total-q-num">?</span>
+        </div>
+    </div>
+    
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="quiz-progress-bar"></div>
+    </div>
+
+    <div class="glass-card" id="quiz-container">
+        <div class="question-text" id="question-text">Loading question...</div>
+        
+        <div class="options-grid" id="options-container">
+            <!-- Dynamically populated -->
+        </div>
+        
+        <div class="explanation-box" id="explanation-box">
+            <p id="explanation-text"></p>
+        </div>
+        
+        <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem;">
+            <button class="btn-primary" id="next-btn" style="display: none;" onclick="nextQuestion()">Next Question ➔</button>
+        </div>
+    </div>
+{% endblock %}

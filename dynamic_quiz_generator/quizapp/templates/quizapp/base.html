@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="icon">✨</span>
+            <span class="text">AI Quiz Gen</span>
+        </div>
+        <div class="nav-links">
+            <a href="{% url 'index' %}" class="nav-link">Home</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script>
+        // Set CSRF token for Fetch API
+        window.csrfToken = "{{ csrf_token }}";
+        window.apiUrls = {
+            generateQuiz: "{% url 'generate_quiz_api' %}",
+            quizView: "{% url 'quiz_view' %}",
+            resultView: "{% url 'result_view' %}"
+        };
+    </script>
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

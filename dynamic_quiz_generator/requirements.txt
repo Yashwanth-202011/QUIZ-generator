@@ -1,0 +1,10 @@
+django
+yt-dlp
+faster-whisper
+pydantic
+requests
+spacy
+keybert
+nltk
+python-dotenv
+groq

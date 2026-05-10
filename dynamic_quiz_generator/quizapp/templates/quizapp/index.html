@@ -1,0 +1,22 @@
+{% extends 'quizapp/base.html' %}
+
+{% block content %}
+    <h1 class="fade-in-up">Generate <span class="gradient-text">Interactive Quizzes</span><br>from YouTube Videos</h1>
+    <p class="subtitle fade-in-up">Instantly transform any educational video into a challenging multiple-choice quiz using AI.</p>
+
+    <div class="glass-card fade-in-up" style="max-width: 600px; padding: 2rem;">
+        <form id="url-form" action="{% url 'process_video' %}" method="POST">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="url" id="youtube-url" name="url" class="input-field" placeholder="Paste YouTube URL here..." required>
+                <button type="submit" class="btn-primary" id="process-btn">
+                    <span class="btn-text">Process Video</span>
+                    <div class="spinner"></div>
+                </button>
+            </div>
+            {% if error %}
+                <p style="color: var(--error); margin-top: 0.5rem; font-size: 0.875rem;">{{ error }}</p>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}
